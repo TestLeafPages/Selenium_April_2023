@@ -1,0 +1,104 @@
+Week 
+1 - Java Basics
+2 - Selenium Basics
+3 - Java Adv
+4 - Selenium ADV
+5 - Interview prep
+6 - TestNG
+7 - Cucumber
+8 - POM
+9 - Framework
+
+
+Java & Selenium
+Humans - English
+Computer - Binary language (0 & 1)
+
+English -> Java -> Binary language (0 & 1)
+jdk 1.8 - bridge between the user and computer
+
+IDE - Integrated development environment
+write, edit, compile, execute and output -> your code
+
+The ext of a java file should be (.java)
+After compiling the (.java) file, (.class) file will be produced [binary code]
+
+JVM - Java Virtual Machine (Handles Memory)
+JRE - Java Runtime Engine (Source code of Java)
+
+JDK = JVM + JRE + compiler
+
+
+
+1.My name is balaji
+2.My name is The Balaji
+
+Group id should start with lower case
+Artifact ID should start with upper case
+
+we are going use src/main/java
+
+package is a folder that contains only (.java) files
+package name should start with lower case
+
+
+Where can I write my code?
+Java Class - space where we can write our code
+
+Is there Conventions?
+Class should start with an Upper Case 
+Class is a {Block of code}
+Class can contain variables (Data) & methods (Actions)
+
+If the class should be executable, then it should contain main() method.
+
+How to include main() method?
+type main -> ctrl + space -> enter
+
+
+How to print?
+syso -> ctrl + space -> enter
+
+To Print the text include "" in the front and back
+"Welcome to Testleaf"
+
+
+Variable is container (memory) to store the data.
+
+Alphabets and numerics
+A-Z, a-z, 0-9, 0.00124, -121, 
+
+
+Data types
+A structure in which you write a code is called as syntax.
+
+Variable - name should always starts with a lower case.
+int num = 7;
+
+Keywords - hold special meaning in java
+should not use these keywords as user defined names for class, variables & method
+All the keywords will always in lowercase
+
+Keyboard short cut to execute the class
+Ctrl + F11
+Ctrl + Fn + F11 
+
+Using IF statement
+if()
+if()...else
+if()...else if().... else..
+if() -> if()
+
+
+Grade system based on the mard
+80-100 -> A
+60-79 -> B
+35-59 -> C
+<35 - > F
+
+Theater -> book a ticket
+switch
+Balcony
+First class
+Second class
+
