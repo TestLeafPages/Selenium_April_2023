@@ -1,0 +1,146 @@
+1. Class
+2. main()
+3. Data types & variables
+4. If..else
+5. switch
+6. for
+
+
+
+Operators
+1. Arithmetic Operator
++,-,*,/,%
+4/2 = 2 -> Q
+4%2 = 0 -> R
+
+2. Comparison Operator
+<,>,<=,>=,==,!=
+
+int a = 5, b = 10;
+a!=b
+
+Assignment Operator
+a = 5;
+
+Logical Operators
+person is 18+ & person is female then entry is free
+Logic 1 , Logic 2
+
+age >= 18 &&  gender == "female" -> entry is free
+AND 
+1 0 -> 0
+0 1 -> 0
+0 0 -> 0
+1 1 -> 1
+
+
+Logic 1, Logic 2
+
+ticket == 'Valid' || seasonalPass=true -> allowed to travel
+OR
+0 1 -> 1
+1 0 -> 1
+0 0 -> 0
+1 1 -> 1
+
+Not !
+!puncture
+
+!age >= 18
+
+
+Incremental and Decremental operator
+++,--
+
+Pre					Post
+++i The impact will be on same line	i++	The impact will be on the next line
+--i					--i
+i++ -> i = i+1
+i-- -> i = i-1
+
+
+methods or actions
+Car
+Data - Brand, model, year, color, reg number, fuel type, car type, seating capacity, eng capacity
+Actions - drive, shiftGear, turnAC, openDoor, sunroof,.....
+
+Car = Class
+Data = variables
+Actions = methods
+
+Simple Calculator
+variables
+inputs - 2 numbers
+output - 1 number
+methods
+add
+sub
+multiply
+divide
+
+
+Methods
+{Block of code}
+contains the action to perform
+syntax
+accessModifier returnType methodName(args){
+}
+Convention for both method & variable: should start with lowercase and 
+first letter the up coming words should be in caps
+numberOne
+methodOne()
+
+Access Modifier
+Mobile
+Car - It is accessable by family
+Door bell - common 
+
+public - any body inside the project
+private - can used inside the class alone
+package/default/no-modifier - any body within the package can access
+protected
+
+void - no output
+int
+
+public int addTwoNumbers(int a, int b){
+
+int x = a+b;
+return x;
+return statement should be the last line of code in the method
+}
+
+Syntax to create an object for the class
+ClassName objectName = new ClassName();
+ClassName() -> Constructor
+To store the output of a method/variable -> Ctrl + 2 and l(L)
+
+Create Car class
+1. Print the brand of the car
+2. Get the reg (1234) of the car
+3. Check the car is puncture
+4. Multiple 3 integers
+5. Get the model of the car
+6. create a main() -> call the methods and understand the implementation
+
+
+
+Array is a concept of storing multiple values of same data type in the same variable.
+
+Write a java program to find the number of times '5' occured in the array
+{1,5,7,8,9,0,4,5,2,3,11,21,32,5,23,67}
+
+String literal -> will be stored into the Collection pool memory
+String object -> will be stored into the heap memory
+
+
+== -> compares the memory location and it will not compare the values
+
+Should compare 2 Strings using ==
+instead we should only use equals()
+
+
+methods and return types
+Object and constructor
+Arrays
+String
