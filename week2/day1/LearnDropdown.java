@@ -1,5 +1,7 @@
 package week2.day1;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,10 +11,15 @@ public class LearnDropdown {
 	public static void main(String[] args) {
 		// To Open Chrome Browser
 		ChromeDriver driver = new ChromeDriver();
+		
 		// To load an URL - http://leaftaps.com/opentaps/control/login
 		driver.get("http://leaftaps.com/opentaps/control/login");
+		
 		// To Maximize the browser opened
 		driver.manage().window().maximize();
+		
+		// To add implicit wait
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 		// To find username webelement
 		WebElement username = driver.findElement(By.id("username"));
@@ -61,6 +68,8 @@ public class LearnDropdown {
 		
 		// To select a value without select class
 		dropdown.sendKeys("Employee");
+		
+		driver.findElement(By.xpath("(xpath)[2]"));
 		
 		// To select an option from the drop down using visible text
 		// dd.selectByVisibleText("Employee");
