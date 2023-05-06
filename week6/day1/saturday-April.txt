@@ -1,0 +1,166 @@
+Agenda for Today:
+=================
+  
+   09:00 to 09:30->TestNG Attributes
+   09:30 to 10:00->Static Parameterization
+   10:00 to 10:30->Breakout+Break
+   10:30 to 11:00->DataProvider
+   11:00 to 11:20->Breakout
+   11:20 to 12:00->Read data form Excel
+   12:00 to 12:20->Breakout
+   12:20 to 12:40->Integration with Create LeadTestCase
+   12:40 to 01:00->Breakout
+   01:00 to 01:15->Common integration
+
+
+
+   TestNG Attributes
+   ====================
+   1.InvocationCount
+   2.ThreadPoolSize
+   3.InvocationTimeOut
+   4.TimeOut
+
+
+
+
+
+
+
+ Parameterization
+ =====================
+
+Static Parameterization-common data to all LeadTestCase
+Dynamic  Parameterization
+
+static -
+browser,url,username,password
+
+Step:1    Passing  the data through xml file       
+
+      Using the below Syntax in xml file :
+       <parameter name= “username”  value=“demosalesManager”></parameter>
+Step:2 Add @Parameter annotation on top of the method
+
+Step:3 create Intput agrs in method and reamove hardcode value and pass agrs inside
+
+
+
+
+Dynamic  Parameterization:(DataProvider)
+to pass mutiple data
+specific to a testcase
+CreateLead
+1.fname
+2.lname
+3.companyname
+4.phone
+5.email-id
+
+BeforeSuite
+ BeforeTest
+  BeforeClass
+   @DataProvider
+   BeforeMethod
+    @Test
+
+
+beforeSuite
+beforeTest
+beforeClass
+dataprovider
+beforeMethod
+createLead
+afterMethod
+beforeMethod
+createLead
+afterMethod
+afterClass
+afterTest
+afterSuite
+
+
+
+
+
+
+
+Steps to implement DataProvider:
+
+1)Identify the data that are need to be dynamic for particular testcase(Cn,fn,Ln)
+2)Create a method to pass data with @DataProvider annotation
+// step:1 declare a 2D String array
+		// first []-represent row
+		// second []- represent column
+		String[][] data = new String[2][4];
+
+		// step2 :assingn data for 2D array
+		// index start with 0
+3)Create input array with number of rows and columns
+   -Index starts with 0
+4)return the data to the testcase
+5)@Test(dataProvider)
+6)Pass all the datas as input arguments
+7)Finally,replace all the hardcoded data with the arguments  
+
+
+
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.3</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.3</version>
+</dependency>
+
+
+
+excle :
+should excle installed in my machine?
+
+no need
+you can use exclefile
+
+
+ Annotations:
+ ==============
+
+  @BeforeSuite- start report ()
+    @BeforeTest- data intergataion(connected db,excle file)
+      @BeforeClass -commom data like tc name,desc,author name
+        @BeforeMethod -pre condition(login ,username,password)
+
+          @Test
+
+        @AfterMethod    -post condition(closes)
+      @AfterClass  -
+    @AfterTest -
+  @AfterSuite   - 
+
+
+
+  Step to Integrate ReadExcle with DataProvider
+==============================================
+1.Declare a String[][] variable in ReadExcle program with dimensions a rowcount and Cellcount.
+2.Save data into the 2D array by having data[i-1][j]=cell.getStringCellValues
+3.add return statement and chnage void to return type.
+4.keyword static retain
+
+createlead Class
+@DataProvider
+
+excleclass.methodname();
+return excleclass.methodname();
+
+
+
+
+
+
+
+
